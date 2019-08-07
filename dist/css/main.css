@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+body{
+display:  flex;
+flex-direction: column;
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    padding: 30px 50px;
+    position: absolute;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    color: #f4ab42;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+}
+.menu a{
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #f4ab42;   
+}
+/**/
+.DeusEx{
+    background: black;
+    display: flex;
+    justify-content: center;
+    color: #f4ab42;
+    text-align: center;
+}
+.DeusEx svg{
+    padding: 100px 0;
+    height: 500px;
+    width: 100%;
+}
+.DeusEx path{ 
+    transition: 3s;     
+}
+.DeusExx{
+    transform: translateX(-2500px);
+}
+/**/
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+    background: #11749e;
+    color: #f4f4f4;
+}
+.AboutUs__psiblock{
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+}
+button{
+    background: #848bee;
+    border: 2px solid #848bee;
+    border-radius: 0.5rem;
+    margin: auto;
+    font-size: 20px;
+    color: whitesmoke;
+}
+/*Карточки*/
+.block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 15px;
+}
+.block img{
+    width: 100%;
+}
+/**/
+.logo{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.AboutUs h2{
+    position:absolute;
+    margin: 0;
+    font-size: 35px;
+}
+.outside{
+    display: inline-block;
+	position: relative;
+    font-size: 200px;
+    color: #3b8daf;
+    margin: 0;
+}
+/**/
+.Work{
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    background: black;
+    color: #f4ab42;
+}
+.Work div{
+    margin: 15px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    
+}
+.Work div h2{
+   height: 100%;
+}
+.Work p{
+    height: 100%;
+}
+.Work i{
+    font-size: 50px;
+}
