@@ -187,6 +187,8 @@ header{
     align-items: center;
     display: flex;
     justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 .logo__text{
     position:absolute;
@@ -197,7 +199,7 @@ header{
     display: inline-block;
     position: relative;
     font-size: 200px;
-    color: #3b8daf;
+    color: #670a35;
     margin: 0;
 }
 /**/
@@ -229,14 +231,65 @@ header{
     }
 }
 /**/
-.table{
+.Table{
+    padding: 20px;
     background: #520428;
+    color: white;
+}
+.Table form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Table__info{
+    display: flex;
+    flex-direction:column;
 }
 input{
-    width:100%; 
     background: transparent;
     border: 1px solid #ffffff;
     color: #f3f3f3;
     font-size: 20px;
-    padding: 0px 15px;
+    padding: 10px;
+    margin: 10px 15px;
+}
+.Table textarea{
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #f3f3f3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 15px;
+    resize: none;
+    height: 150px;
+}
+.Table__button button{
+    background: #3b8daf;
+    border: none;
+    color: #f3f3f3;
+    font-size: 20px;
+    padding:10px 50px;
+    margin: 10px 15px;
+}
+@media (min-width: 768px){
+    .Table__info{
+        flex-direction:row;
+    }
+    input{
+        width:100%; 
+    }
+}
+/**/
+footer{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    color:#ffffff;
+    font-size: 15px;
+    padding: 10px;
+}
+footer i{
+    margin: auto 0;
+    font-size: 25px;
+    padding: 15px;
 }

@@ -311,22 +311,30 @@
             </div>
         </div>
     </div>
-    <div class="table">
+    <div class="Table">
+        <div class="logo">
+            <p class="outside">М</p>
+            <h2 class="logo__text">Мы хотели бы услышать о вашем проекте</h2>
+        </div>
         <form action="/Home/ContactUs" method="post" name="ContactUsModel">
-            <div class="Info">
+            <div class="Table__info">
                 <input name="Name" type="text" placeholder="Ваше имя*">
                 <input name="Email" type="text" placeholder="Ваш E-mail*">
                 <input name="Phone" type="text" placeholder="Ваш телефон">
             </div>
             <textarea name="Text" placeholder="Ваше сообщение"></textarea>
-            <p>* Отправляя свои данные, Вы даете согласие на обработку персональных данных.</p>
-            <div class="but-foot">
-                <span>* Звездочкой отмечены обязательные для заполнения поля.</span>
+            <div class="Table__button">
                 <button type="submit">Отправить</button>
             </div>
         </form>
     </div>
-    
+    <footer>
+        <p>Mikiri@2017-2019</p>
+        <div>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://kit.fontawesome.com/3688867a82.js"></script>
