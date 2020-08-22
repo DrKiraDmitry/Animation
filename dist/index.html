@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">MIKIRI</div>
+        <div class="header-logo">MIKIRI</div>
         
         <svg id="menu__bar" onclick="menu();" width="23" height="23"  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0.5H23" stroke="#FFE0E0"/>
@@ -17,10 +17,9 @@
             <path d="M0 22H23" stroke="#FFE0E0"/>
         </svg>            
         <div id="menu__mobile" class="menu">
-            <a href="#">Главная</a>
-            <a href="#">Анимация и Js</a>
-            <a href="#">Векторная Графика</a>
-            <a href="#">Верстка и Api</a>
+            <a href="#about">Кто я</a>
+            <a href="#who">Чем занимаюсь</a>
+            <a href="#info">Ищи</a>
         </div>
     </header>
     <div class="DeusEx">
@@ -247,96 +246,63 @@
             
         </svg>   
         <div>
-            <h1>Добро пожаловать в компанию MIKIRI</h1>
-            <a href="#about">ПРОДОЛЖИТЬ</a>
+            <h1>Меня зовут Дима, <br> и я фронт</h1>
         </div>             
     </div>
     <div id="about" class="AboutUs">
         <div class="logo">
-            <p class="outside">У</p>
-            <h2 class="logo__text">Наши услуги</h2>
+            <p class="outside">К</p>
+            <h2 class="logo__text">Кто я</h2>
         </div>
-        <div  class="AboutUs__psiblock">
-            <div class="block">
-                <img src="Безымянный.png" alt="">
-                <div class="block__content">
-                    <h1>Векторная Графика</h1>
-                    <p>Занимаюсь созданием логотипов и иконок в векторной графике (в формате SVG), их можно использовать как на веб-страницах, так и для размещения на вещах
-                    </p>
-                    <button>Узнать больше</button>
-                </div>
-            </div>
-            <div class="block">
-                <img src="animatinAndJs.png" alt="">
-                <div class="block__content">
-                    <h1>Анимация и Js</h1>
-                    <p>
-                        Красивая анимация, это не всегда легко, но она того стоит. Она сделает ваш сайт, живым и запоминающимся. Анимация это не только, выпадающие окна, можно заставить двигаться даже картины
-                    </p>
-                    <button>Узнать больше</button>
-                </div>
-            </div>
-            <div class="block">
-                <img src="unnamed.png" alt="">
-                <div class="block__content">
-                    <h1>Верстка и Api</h1>
-                    <p>
-                        "Мне нужен сайт", но сайт это не только страница, ему еще нужна и логика, которая обрабатывается на сервере. Сайт может быть Одностраничный иначе, Лэндинг, а может сложным приложением в которым и чат, и управление заказами. Так что же нужно?
-                    </p>    
-                    <button>Узнать больше</button>
-                </div>
-            </div>
+        <div class="about__block about__block_1">
+            Я ведущий Front-end разработчик, есть постоянная должность, но иногда веду еще и стороние проекты.
+        </div>
+        <div class="about__block about__block_2">
+            У меня широкий спектор задача, так как не хочу быть рядовым сотрудником и погружаюсь полностью в проекты что веду, это: обсуждение, поиск подходов, внедрение новых технологий, продумывание возможных ошибок. <br><br> Так же, проверяю код наших фрилансеров, наставляю. <br><br> Помогаю в дизайн решениях, и проявляю инициативу в ходе работы. Делая лучше, а не как пойдет.
+        </div>
+        <div class="about__block about__block_3">
+            За счет того, что понимаю основы базовых принципов программирования и умею читать документацию. Нет проблем разобраться в библиотеках или каких-то вещах связанными с вебом.
         </div>
     </div>
-    <div class="Work">
+    <div id="who" class="Work">
         <div class="logo">
-            <p class="outside">Д</p>
-            <h2 class="logo__text">Наши Достоинства</h2>
+            <p class="outside">Ч</p>
+            <h2 class="logo__text">Чем занимаюсь</h2>
         </div>
-        <div class="Work__block">
-            <div class="Work__psiblock">
-                <i class="fas fa-laptop-code"></i>
-                <h2>Ответсвенность и поддержка</h2>
-                <p>Нам важно сделать достойный проект, </p>
-            </div>
-            <div class="Work__psiblock">
-                <i class="fas fa-laptop-code"></i>
-                <h2>Индивидуальный подход</h2>
-                <p>Постоянный контакт по любому вопросу</p>
-            </div>
-            <div class="Work__psiblock">
-                <i class="fas fa-laptop-code"></i>
-                <h2>Полная документация к проекту</h2>
-                <p></p>
-            </div>
+        <div class="work__block work__block_1">
+            Занимаюсь всем, что касается фронт разработки, консультирую по вашим проектам, проверю ваш код, помогу с логотипами.
         </div>
     </div>
-    <div class="Table">
+    <div id="info" class="Table">
         <div class="logo">
-            <p class="outside">М</p>
-            <h2 class="logo__text">Мы хотели бы услышать о вашем проекте</h2>
+            <p class="outside">И</p>
+            <h2 class="logo__text">Ищи меня здесь</h2>
         </div>
-        <form action="/Home/ContactUs" method="post" name="ContactUsModel">
-            <div class="Table__info">
-                <input name="Name" type="text" placeholder="Ваше имя*">
-                <input name="Email" type="text" placeholder="Ваш E-mail*">
-                <input name="Phone" type="text" placeholder="Ваш телефон">
-            </div>
-            <textarea name="Text" placeholder="Ваше сообщение"></textarea>
-            <div class="Table__button">
-                <button type="submit">Отправить</button>
-            </div>
-        </form>
+        <div class="info-list">
+            <a href="https://vk.com/id153276418" class="footer__link vk">
+                <i class="fab fa-vk"></i>
+            </a>
+            <a href="https://kemerovo.hh.ru/applicant/resumes/view?resume=c38199f0ff06079abd0039ed1f776464364e57" class="footer__link">
+                <img src="hh.svg" alt="">
+            </a>
+            <a href="http://instagram.com/kira_k.d" class="footer__link insta">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </div>
-    <footer>
-        <p>Mikiri@2017-2019</p>
-        <div>
-        <i class="fab fa-github"></i>
-        <i class="fab fa-instagram"></i>
-        </div>
+    <footer class="footer">
+        <p>Mikiri@2017-2020</p>
+        <p>kira_k.d</p>
+        <!-- <div class="footer__link-list">
+            <a href="" class="footer__link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://kemerovo.hh.ru/applicant/resumes/view?resume=c38199f0ff06079abd0039ed1f776464364e57" class="footer__link">
+                <img src="hh.svg" alt="">
+            </a>
+        </div> -->
     </footer>
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://kit.fontawesome.com/3688867a82.js"></script>
 </body>
 </html>

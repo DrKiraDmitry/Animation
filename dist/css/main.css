@@ -10,15 +10,16 @@ header{
     display: flex;
     flex-direction: row;
     font-size: 15px;
-    padding: 30px 50px 0;
+    padding: 20px 20px 0;
     position: absolute;
     justify-content: space-between;
     left: 0;
     right: 0;
     color: #f4ab42;
     align-items: center;
+    box-sizing: border-box;
 }
-.logo{
+.header-logo{
     font-size: 30px;
 }
 .menu{
@@ -27,13 +28,14 @@ header{
     display: flex;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.6);
-    top:-200px;
-    right:90px;
+    top:26px;
+    right:65px;
     border: 1px solid #f4ab42;
     border-radius: 1rem;
+    transform: translateY(-200px);
 }
 .menu__mobileon{
-    top: 75px;
+    transform: translateY(0px);
 }
 #menu__mobile a{
     padding: 10px 0px;
@@ -47,9 +49,11 @@ header{
     }
 }
 @media(min-width:1024px){
-    /* header{
-        border-bottom: 1px solid rgb(49, 49, 49);
-    } */
+    header{
+        /* border-bottom: 1px solid rgb(49, 49, 49); */
+        margin: 0 auto;
+        padding: 30px 60px 0;
+    }
     .menu{
         transition: none;
         display: flex;
@@ -58,9 +62,7 @@ header{
         border: none;
         border-radius: none;
         position: static;
-    }
-    .menu__mobileon{
-        display: none;
+        transform: translateY(0px);
     }
     #menu__bar{
         display: none;
@@ -89,10 +91,12 @@ header{
     color: #f4ab42;
     text-align: center;
     padding: 50px 0;
+    height: 100vh;
+    box-sizing: border-box;
 }
 .DeusEx svg{
     padding: 50px 0;
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
 }
 .DeusEx path{ 
@@ -235,6 +239,36 @@ header{
     padding: 20px;
     background: #520428;
     color: white;
+    padding-bottom: 80px;
+}
+
+.info-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info-list a, .info-list img{
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.info-list a:hover{
+    opacity: 1;
+}
+.vk{
+    background: #4a76a8;
+    font-size: 25px;
+}
+.insta{
+    font-size: 30px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 .Table form{
     display: flex;
@@ -277,6 +311,18 @@ input{
     }
     input{
         width:100%; 
+    }
+}
+@media(min-width: 768px){
+    .info-list a, .info-list img{
+        height: 150px;
+        width: 150px;
+    }
+    .vk{
+        font-size: 85px;
+    }
+    .insta{
+        font-size: 100px;
     }
 }
 /**/
